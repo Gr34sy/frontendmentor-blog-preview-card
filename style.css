@@ -54,6 +54,42 @@ body {
     width: 100%;
 }
 
+.card__tag{
+    padding: 0.4rem 1rem;
+    justify-self: start;
+
+    font-weight: 800;
+
+    background-color: var(--yellow);
+    border-radius: 5px;
+}
+
+.card__date{
+    font-weight: 600;
+}
+
+.card__title{
+    font-weight: 800;
+    font-size: 1.7rem;
+}
+
+.card__description{
+    font-weight: 500;
+    color: var(--grey);
+}
+
+.card__author {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 800;
+}
+.card__author img{
+    width: 35px;
+    height: 35px;
+}
+
 footer {
   padding: 0.8rem;
   text-align: center;
@@ -68,5 +104,8 @@ footer {
 @media(min-width: 375px){
     .card{
         padding: 1.6rem;
+    }
+    .card__description{
+        font-size: 1.1rem;
     }
 }
